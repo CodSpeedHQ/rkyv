@@ -20,8 +20,10 @@ readme = "README.md"
 repository = "https://github.com/rkyv/rkyv"
 
 [workspace.dependencies]
-bytecheck = { version = "0.8", default-features = false, features = ["simdutf8"] }
-divan = { version = "0.1", default-features = false }
+bytecheck = { version = "0.8", default-features = false, features = [
+    "simdutf8",
+] }
+divan = { package = "codspeed-divan-compat", version = "2.8.0-alpha.3", default-features = false }
 hashbrown = { version = "0.15", default-features = false }
 munge = { version = "0.4", default-features = false }
 proc-macro2 = { version = "1", default-features = false }
